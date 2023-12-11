@@ -1,0 +1,38 @@
+@import url(reset.css);
+
+/* common 공통 */
+
+html, body { 
+   font-family: 'GM_m', '맑은 고딕'; 
+   font-size: 18px;
+   letter-spacing: -1px; 
+   color: #fff; 
+   background: #000;
+   /* overflow-x: hidden;  */
+   /* overflow-y: hidden;  */
+   scroll-behavior: smooth;
+   cursor: none;
+   cursor: url(../images/icon_cousor.png) 0 0, auto;
+}
+ a { 
+   text-decoration: none; 
+   color: #333; 
+}
+
+/* font */
+@font-face {
+font-family: GM_l;
+src: url(../font/GmarketSansLight.otf); }
+
+@font-face {
+font-family: GM_m;
+src: url(../font/GmarketSansMedium.otf); }
+
+@font-face {
+font-family: GM_b;
+src: url(../font/GmarketSansBold.otf); }
+
+@font-face {
+  font-family: MG;
+  src: url(../font/malgun.ttf); }
+

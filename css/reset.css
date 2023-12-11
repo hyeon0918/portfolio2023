@@ -1,0 +1,53 @@
+/* reset.css 
+태그에 기본적으로 적용되어있는 내용 초기화
+*/
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1,h2,h3,h4,h5,h6,p,
+blockquote, pre, abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,summary,
+
+small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,
+section,time,mark,audio,video {margin: 0; padding: 0;}
+
+/* 시멘틱 요소 block */
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,video {display: block;}
+
+/*table에 border를 넣으면 칸이 벌어짐, border-collapse가 벌어짐 방지 */
+table{border-collapse: collapse;}
+/* 지정하지 않으면 칸과 칸 사이가 벌어짐 */
+fieldset,img{border: 0;}
+address,caption,cite,code,em,strong,th{font-style: normal; font-weight: normal;}
+ol,ul{list-style: none;}
+
+/* 기본 : 가운데 정렬 → 왼쪽으로 초기화 */
+caption,th {text-align: left;}
+/* h1~6 사이즈 초기와 굵기 초기화 */
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal;}
+/* 인용구 " " 삭제 */
+q:before, q:after{content:"";}
+/* 가상요소 + 인라인요소
+::after { content: ""; } → content에 입력한 내용이 뒤에 적힘 
+::before { content: ""; } → content에 입력한 내용이 앞에 적힘
+ex)  
+<p>::after와 ::before은 가상요소입니다. </p>
+p::before { content: "가상요소"; color: red; }  [출력내용] 가상요소::after와 ::before은 가상요소입니다.
+p::after { content: "가상요소"; color: blue; }  [출력내용] ::after와 ::before은 가상요소입니다.가상요소
+
+p::before { content: ""; display: inline-block; widht: 100px; height: 20px; background-color: red; } [출력내용] 설정한 박스크기의 요소가 생김
+*/
+
+abbr, acronym {border: 0;}
+/* img태그 기본 : 세로정렬  → 가운데 정렬로 초기화 */
+img,input{vertical-align: middle;}
+/*
+의미상 태그 마크업 화면에 보이지 않게 해주는거
+display: none 화면에 안보이고 시각장애인들에게 읽어주지도 않음
+skiNavi 화면에 보이지 않지만 시각장애인들에게 읽힘
+*/
+hr{display: none;}
+#skipNavi, .blind {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0;
+line-height: 0; text-indent:-9999px; overflow: hidden; visibility: hidden; }
+
+

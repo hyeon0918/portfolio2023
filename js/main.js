@@ -137,7 +137,6 @@ const workW = document.querySelector(".work_wrap > div").clientWidth; // 요소 
 const pageRoll = document.querySelectorAll("ul.slide_roll > li"); // 롤링 버튼
 
 let workNum = 0;
-let lastNum = work.length-1;
 console.log(workW);
 
 // next 버튼 클릭했을 때
@@ -149,7 +148,7 @@ workNext.addEventListener("click", e => {
    workPrev.classList.remove("on");
 
 
-   if (workNum < lastNum) {
+   if (workNum === 2) {
       workNext.classList.add("on");
    };
 

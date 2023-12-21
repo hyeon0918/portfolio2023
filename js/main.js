@@ -1,5 +1,13 @@
 // main.js
 
+// 사이즈 변경 시 새로고침
+$(window).resize(function(){document.location.reload();})
+
+// 새로고침 시 맨 위로
+// $(function(){
+//    $("html, body").animate({ scrollTop: 0 }, "slow"); 
+// });
+
 // cursor
 var cursor = document.querySelector('.cursor');
 var a = document.querySelectorAll('a');

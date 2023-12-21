@@ -148,6 +148,3 @@ window.onload = animateText;
 
 
 
-
-
-

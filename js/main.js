@@ -65,9 +65,16 @@ let activation = (wheel) => {
 
          activation2(i, sections); // sections의 forEach문
          activation2(i, gnbLis); // gnbLis의 forEach문
+         // w3c 접근성 결과 페이지
+         const closeVeri = document.querySelector(".verification > div.on");
+         if(closeVeri){
+            closeVeri.classList.remove("on");
+         };
       };
    };
 };
+
+
 
 // activation 함수 내에 반복되는 forEach문
 let activation2 = (index, list) => {
@@ -183,3 +190,65 @@ workPrev.addEventListener("click", e => {
    });
    pageRoll[workNum].classList.add("on");
 });
+
+
+// w3c 접근성 결과 페이지
+const veriBtn = document.querySelectorAll(".work_wrap div li.veri_btn");
+const verification = document.querySelectorAll(".verification > div");
+const backBtn = document.querySelectorAll(".back");
+
+veriBtn.forEach(item => {
+   item.addEventListener("click", e => {
+      e.preventDefault();
+
+      // a 태그에 연결한 링크 값과 동일한 ID 값을 가진 verification 호출
+      const targetId = e.currentTarget.querySelector("a").getAttribute("href");
+      const targetVeri = document.querySelector(`.verification > div[id="${targetId}"]`);
+
+      // 모든 verification에서 클래스 요소 제거
+      verification.forEach(item => {
+         item.classList.remove("on");
+      });
+
+      // 위에서 호출한 동일한 값을 가진 아이에게 클래스 on 추가
+      if(targetVeri) {
+         targetVeri.classList.add("on");
+      };
+   });
+});
+
+// 닫기 버튼
+backBtn.forEach(item => {
+   item.addEventListener("click", e => {
+      e.preventDefault();
+      
+      // 현재 클래스 on이 붙어있는 verification의 클래스 on 제거
+      const currentVeri = document.querySelector(".verification > div.on");
+      if(currentVeri){
+         currentVeri.classList.remove("on");
+      };
+   });
+});
+
+// 접근성 페이지 내 tabMenu
+const tabMenu = document.querySelectorAll(".verification ul.tab_menu > li");
+const result = document.querySelectorAll(".verification .veri_wrap > ul.veri_result > li");
+
+tabMenu.forEach((tab, index) => {
+   tab.addEventListener("click", e => {
+      e.preventDefault();
+
+      // 모든 tabMenu 클래스 on 제거+ 모든 결과 숨기기
+      tabMenu.forEach(item => item.classList.remove("on"));
+      result.forEach(item => item.style.display = "none");
+
+      // 클릭한 tab에 클래스 on 추가
+      tab.classList.add("on");
+      // 클릭한 tab에 해당하는 결과 보이기
+      result[index].style.display = "block";
+   })
+   tabMenu[0].classList.add("on");
+});
+
+
+

@@ -19,7 +19,7 @@ src: url(../font/GmarketSansBold.otf); }
    src: url(../font/malgun.ttf); }
    
 body { font-family: 'GM_m', '맑은 고딕'; font-size: 16px; color: #fff; background: #000;
-   /* overflow-x: hidden;  */ overflow-y: hidden; cursor: none; box-sizing: border-box; }
+   overflow-x: hidden;  overflow-y: hidden; cursor: none; box-sizing: border-box; }
 /* body.night {  } */
 
 a { color: #fff; text-decoration: none; }
@@ -44,12 +44,26 @@ html { font-size: 16px; }
 .minBtn_box { display: none; }
 .minBtn { display: none; }
 
+/* layout */
 #header { z-index: 90; position: fixed; left: 0; top: 0; width: 100%;
     /* height: 60px; */
    height: 5vh; margin-top: 30px; }
+   .header_inner { display: flex; justify-content: flex-start; padding: 0 11vh; }
+
+#container { width: 100%; height: 100%; }
+   section.home { }
+   section.profile { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+   section.pub,section.design { position: relative; width: 100%; height: 100%; }
+      .pub_inner,.design_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 57.6vh; padding: 110px 90px; 
+         background: rgba(38, 38, 38, 0.80); border-radius: 24px; }
+      .pub_frame,.design_frame { overflow: hidden; z-index: 10; position: relative; width: 100%; height: 100%; transition: left 0.6s ease-in-out; }
+      .work_wrap,.design_wrap { position: relative; display: flex; justify-content: flex-start; transition: left 0.6s ease-in-out; width: 300%; height: 100%; }
+
+#contact { position: relative; }
+   section.contact { width: 100vh; height: 100vh; margin: 0 auto; display: flex; flex-direction: column; }
+
 
 /* 메인 로고 */
-.header_inner { display: flex; justify-content: flex-start; padding: 0 11vh; }
 /* name */
 .name_info { width: 12%; display: flex; flex-wrap: wrap; }
 .name_info div { overflow: hidden; }
@@ -68,7 +82,6 @@ html { font-size: 16px; }
 
 /* 주메뉴 */
 nav.gnb { width: 40%;  float: left; margin-left: auto; }
-
 nav.gnb > ul { display: flex; justify-content: space-between; line-height: 5vh; }
 nav.gnb > ul > li { color: #fff; width: 20%; text-align: center; }
 nav.gnb > ul > li.on { font-family: GM_B; }
@@ -77,8 +90,6 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 /* // header */
 
 /* container */
-main#container { width: 100%; height: 100%; }
-
 /* content1_home */
 .home > h2 { position: absolute; width: 100%; top: 45%; text-align: center; font-size: 8rem; font-family: 'GM_b' }
 
@@ -98,8 +109,6 @@ main#container { width: 100%; height: 100%; }
 }
 
 /* content2_profile */
-section.profile { position: relative; width: 100%; height: 100vh; overflow: hidden; }
-
 /* textbox */
 .textbox { position: relative; width: 63.5vw; height: 63vh; top: 55%; transform: translateY(-50%); margin: 0 auto;
    padding: 7.4vh 12vh;  display: flex; gap: 100px; background: rgba(38, 38, 38, 0.80); border-radius: 24px;  }
@@ -147,24 +156,22 @@ section.profile { position: relative; width: 100%; height: 100vh; overflow: hidd
 .skills_S > dd > ul > li:nth-of-type(5) { background-position-x: -120px; }
 .skills_S > dd > ul > li:nth-of-type(6) { background-position-x: -150px; }
 
-section.pub,section.design { position: relative; width: 100%; height: 100%; }
 
 /* content3_publishing */
 /* content4_design */
-.pub_inner,.design_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 57.6vh;
-   padding: 110px 90px; background: rgba(38, 38, 38, 0.80); border-radius: 24px; }
-.pub_frame,.design_frame { overflow: hidden; z-index: 10; position: relative; width: 100%; height: 100%;
-   transition: left 0.6s ease-in-out; }
-.work_wrap,.design_wrap { position: relative; display: flex; justify-content: flex-start; transition: left 0.6s ease-in-out;
-   width: 300%; height: 100%;
-   /* transition: left 03s linear 0; */ }
-
 .work_wrap div { flex: 1; display: flex; justify-content: flex-start; }
 
 .work_wrap .work_textbox { display: flex; flex-direction: column; gap: 20px; padding: 0 5px; }
 .work_textbox > h3 { color: #a0a0a0; font-size: 3.5rem; font-family: 'GM_b'; }
 .work_textbox > .work_hashi > span { display: inline-flex; justify-content: center; align-items: center; padding: 10px 38px; height: 40px;
    color: #333; font-family: 'GM_b'; border-radius: 1074px; background: #e1e429; }
+
+/* 브랜드 color */
+.work_wrap > div:nth-of-type(1) .work_hashi > span { background: #8dc63f; }
+.work_wrap > div:nth-of-type(3) .work_hashi > span { background: #882579; color: #ddd; }
+
+
+
 .work_textbox > h4 { margin-top: 3.2vh; font-size: 2.3rem; font-family: 'GM_b'; }
 .work_textbox > p { font-family: 'GM_m'; font-size: 1.1rem; line-height: 26px; }
 .work_textbox > ul:nth-of-type(1) { padding-left: 0.6vw; list-style: disc; list-style-position: inside; line-height: 30px; color: #a0a0a0; font-size: 1.1rem; }
@@ -186,6 +193,11 @@ section.pub,section.design { position: relative; width: 100%; height: 100%; }
 .work_textbox > ul:nth-of-type(2) > li:hover { background: #e1e429; border: 1px solid #e1e429; }
 .work_textbox > ul:nth-of-type(2) > li:hover > a { color: #333; }
 
+/* 브랜드 color */
+.work_wrap > div:nth-of-type(1) ul:nth-of-type(2) > li:hover { background: #8dc63f; border: 1px solid #8dc63f; }
+.work_wrap > div:nth-of-type(3) ul:nth-of-type(2) > li:hover { background: #882579; border: 1px solid #882579; }
+.work_wrap > div:nth-of-type(3) ul:nth-of-type(2) > li:hover a { color: #ddd; }
+
 /* work_wrap > mockup */
 .work_wrap > div > .mockup { width: 38vw; height: 52.4vh; margin: 3.7vh 0 3.7vh; text-indent: -9999px; overflow: hidden; }
 
@@ -195,7 +207,7 @@ section.pub,section.design { position: relative; width: 100%; height: 100%; }
 .work_wrap > div:nth-of-type(3) > .mockup { background: url(../images/mockup_cjone.png) no-repeat 0 50%; background-size: contain; }
 
 /* pub,design arrow */
-.pagenation { position: absolute; z-index: 100; left: 50%; transform: translateX(-50%); bottom: 12%; display: flex; gap: 30px; }
+.pagenation { position: absolute; z-index: 20; left: 50%; transform: translateX(-50%); bottom: 12%; display: flex; gap: 30px; }
 
 .pagenation > a { width: 25px; height: 20px; background: url(../images/icon_arrow.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; }
 .pagenation > a.next { background-position-x: -25px; }
@@ -206,10 +218,37 @@ section.pub,section.design { position: relative; width: 100%; height: 100%; }
 .slide_roll li { width: 14px; height: 14px; border-radius: 20px; text-indent: -9999px; overflow: hidden; background: #a0a0a0; }
 .slide_roll li.on { background: #e1e429; }
 
-/* contact */
-#contact { position: relative; }
-section.contact { width: 100vh; height: 100vh; margin: 0 auto; display: flex; flex-direction: column; }
+/* w3c 접근성 결과 페이지 */
+.verification > div { z-index: 30; position: absolute; left: 0; top: 4%; width: 100%; height: 96%; background: #000;
+   display: flex; flex-direction: column; justify-content: center; transform: translateX(100%); transition: transform 0.6s ease; } 
+.verification > div.on { transform: translateX(0);}
 
+.verification > div > h2 { margin: 0 auto; width: 72vw; display: flex; align-items: center; gap: 40px; white-space: nowrap; font-family: GM_b; font-size: 3.8rem; line-height: 88px; }
+.verification > div > h2 > a { display: block; width: 43px; height: 40px; }
+.verification > div > h2 > a > img { vertical-align: top; }
+
+/* tab_menu */
+.tab_menu { width: 72.91vw; margin: 16px auto 16px; display: flex; gap: 10px; font-size: 20px; font-family: GM_m; }
+.tab_menu > li { line-height: 30px; padding: 10px 15px; border-radius: 50px; }
+.tab_menu > li.on { background: #e1e429; }
+.tab_menu > li.on > a { color: #383838; }
+
+/* 브랜드 color */
+.verification > div:nth-of-type(1) .tab_menu > li.on { background: #8dc63f; }
+.verification > div:nth-of-type(3) .tab_menu > li.on { background: #882579; }
+.verification > div:nth-of-type(3) .tab_menu > li.on > a { color: #ddd; }
+
+
+/* veri_wrap */
+.veri_wrap { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; 
+   width: 72vw; height: 60vh; margin: 0 auto; padding: 20px 0; }
+.veri_wrap > .veri_result { width: 80%; max-width: 840px; }
+
+.veri_result > li { width: 100%; display: none; }
+.veri_result > li.on { display: block; }
+.veri_result img { display: block; }
+
+/* contact */
 .contact h2 { width: 100%; text-align: center; padding-top: 38vh; font-family: 'GM_b'; font-size: 6.25rem; }
 .contact ul { display: flex; justify-content: space-between; width: 100%; height: 3vh; line-height: 3vh; margin-top: 30vh; }
 .contact ul > li { position: relative; width: 10vw; text-align: center; font-size: 1.2rem; }
@@ -219,7 +258,15 @@ section.contact { width: 100vh; height: 100vh; margin: 0 auto; display: flex; fl
 .contact ul > li a:hover { color: #e1e429; font-weight: bold; font-size: 1.4rem; transition: .3s ease-out; }
 
 /* 각각의 hover */
-.contact ul > li:nth-of-type(2) a::after {  opacity: 0; display: block; clear: both; content: ""; position: absolute; left: 12%; bottom: 140%; width: 7.8vw; height: 7.8vw;
+
+/* email + phone */
+.contact ul > li a::before { display: block; clear: both; content: ""; position: absolute; left: 26px; top: 4px; width: 24px; height: 24px; 
+   background: url(../images/icon_contact.png) no-repeat 0 0; }
+.contact ul > li:nth-of-type(3) a::before { background-position-x: -24px; }
+
+/* openchat */
+.contact ul > li:nth-of-type(2) a::before { display: none; }
+.contact ul > li:nth-of-type(2) a::after { opacity: 0; display: block; clear: both; content: ""; position: absolute; left: 12%; bottom: 140%; width: 7.8vw; height: 7.8vw;
    border-radius: 10px; background: url(../images/icon_openchat_hover.jpg) no-repeat 0 0; background-size: cover; }
 .contact ul > li:nth-of-type(2) a:hover::after { opacity: 1; transition: opacity 0.4s ease-in-out; }
 

@@ -1,15 +1,12 @@
-/* reset.css 
-태그에 기본적으로 적용되어있는 내용 초기화
-*/
 @charset "utf-8";
 
-html, body, div, span, object, iframe, h1,h2,h3,h4,h5,h6,p,
-blockquote, pre, abbr,address,cite,code,del,dfn,em,img,
-ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,summary,
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,strong,
+sub,sup,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,summary,a,
 
-small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,
-section,time,mark,audio,video {margin: 0; padding: 0;}
+small,b,i,article,aside,canvas,details,figcaption,figure,footer,
+header,menu,nav,section,time,mark,audio,video{ margin:0; padding:0; }
 
 /* 시멘틱 요소 block */
 article,aside,details,figcaption,figure,footer,header,menu,nav,section,video {display: block;}
@@ -50,4 +47,4 @@ hr{display: none;}
 #skipNavi, .blind {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0;
 line-height: 0; text-indent:-9999px; overflow: hidden; visibility: hidden; }
 
-
+img { max-width: 100%; }

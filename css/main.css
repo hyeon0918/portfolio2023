@@ -111,31 +111,31 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 /* content2_profile */
 /* textbox */
 .textbox { position: relative; width: 63.5vw; height: 63vh; top: 55%; transform: translateY(-50%); margin: 0 auto;
-   padding: 7.4vh 12vh;  display: flex; gap: 100px; background: rgba(38, 38, 38, 0.80); border-radius: 24px;  }
+   padding: 7.4vh 12vh;  display: flex; gap: 60px; background: rgba(38, 38, 38, 0.80); border-radius: 24px;  }
 
 /* textbox_left */
-.textbox_left { display: flex; flex-direction: column; }
+.textbox_left { position: relative; width: 41vw; display: flex; flex-direction: column; gap: 12px; }
 
 .box_01 { width: 100%; display: flex; justify-content: center; align-items: center; gap: 43px; }
-.profile_img > img { flex-shrink: 0; }
+.profile_img { width: 218px; flex-shrink: 0; }
 
 /* info */
 .info { width: 100%; }
 .info > p { font-size: 1.75rem; font-family: 'GM_b'; }
 .info > p > span { color: #e1e429; }
 
-.info_hashi { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 24px; }
-.info_hashi > li { padding: 4px 8px; gap: 8px; border-radius: 64px; background: #e1e429; color: #383838;
+.info_hashi { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 24px; }
+.info_hashi > li { padding: 6px 8px; gap: 8px; border-radius: 64px; background: #e1e429; color: #383838;
    font-size: 0.94rem; font-family: 'GM_b'; }
 
 /* textbox_left */
-.textbox_left > p {  width: 100%; margin-top: 72px; line-height: 160%; font-family: 'GM_m'; font-size: 1.5rem;
+.textbox_left > p {  width: 100%; padding: 36px 0 36px; line-height: 160%; font-family: 'GM_m'; font-size: 1.5rem;
    color: #a0a0a0; text-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5); }
 .textbox_left > p > span { color: #e1e429; }
 
 /* textbox_right */
 .textbox_right { display: flex; flex-direction: column; }
-.textbox_right > .skills { display: flex; flex-direction: column; gap: 90px; margin-top: 80px; }
+.textbox_right > .skills { display: flex; flex-direction: column; gap: 80px; margin-top: 60px; }
 
 .skills > li > dl.skills_L { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .skills > li > dl > dt > ul.skills_title { display: flex; justify-content: flex-start; gap: 14px; }

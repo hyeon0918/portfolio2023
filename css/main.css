@@ -51,7 +51,6 @@ html { font-size: 16px; }
    .header_inner { display: flex; justify-content: flex-start; padding: 0 11vh; }
 
 #container { width: 100%; height: 100%; }
-   section.home { }
    section.profile { position: relative; width: 100%; height: 100vh; overflow: hidden; }
    section.pub,section.design { position: relative; width: 100%; height: 100%; }
       .pub_inner,.design_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 57.6vh; padding: 110px 90px; 

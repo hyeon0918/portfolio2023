@@ -8,6 +8,9 @@ $(window).resize(function(){document.location.reload();})
 //    $("html, body").animate({ scrollTop: 0 }, "slow"); 
 // });
 
+// a태그 점핑 방지
+$("a").click(function(e){e.preventDefault();});
+
 // cursor
 var cursor = document.querySelector('.cursor');
 var a = document.querySelectorAll('a');

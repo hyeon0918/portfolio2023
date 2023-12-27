@@ -8,6 +8,8 @@
 <title>한희현 | 포트폴리오</title>
 <!-- css -->
 <link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/tablet.css">
+<link rel="stylesheet" href="./css/mobile.css">
 
 <!-- script -->
 <script src="./js/jquery-3.7.1.min.js"></script>
@@ -36,23 +38,19 @@
 <!-- // bg -->
 
 <!-- 모바일 / 태블릿 메뉴 전체보기 -->
-<div class="minBtn_box on">
-   <div class="minBtn_head">
-      <p>HUIHYEON</p>
-      <div class="minBtn_close">
-         <a href="#">
-            <img src="./images/icon_ham_close.png" width="22" alt="메뉴 전체보기 닫기">
-         </a>
-      </div>
+<div class="minBtn_box">
+   <div class="minBtn_close">
+      <a href="#">메뉴 전체보기 닫기 버튼</a>
    </div>
+
    <div class="minBtn_nav">
       <ul>
+         <li><a href="#home">HOME</a></li>
          <li><a href="#profile">ABOUT ME</a></li>
          <li><a href="#publishing">PUBLISHING</a></li>
          <li><a href="#design">DESIGN</a></li>
          <li><a href="#contact">CONTACT</a></li>
       </ul>
-      <span>© 2023. Hui Hyeon Co. all rights reserved.</span>
    </div>
 </div>
 
@@ -91,9 +89,7 @@
 
       <!-- 모바일 / 태블릿 햄버거 버튼 -->
       <!-- min_btn -->
-      <div class="minBtn">
-         <img src="./images/icon_ham_open.png" width="22" alt="메뉴 전체보기" class="ham">
-      </div>
+      <div class="minBtn"><a href="#">메뉴 전체보기 버튼</a></div>
       <!-- // 모바일 / 태블릿 햄버거 버튼 -->
    </div>
    <!-- // header_inner -->
@@ -149,7 +145,7 @@
 
                </div>
                <!-- // box_01 -->
-               <p>
+               <p class="txt_pc">
                   안녕하세요 한희현입니다. <br>
                   다양한 환경에서 모든 사용자가 쉽게 접근하고 상호작용할 수 있는 <br>
                   웹사이트를 구현하는 것이 목표입니다. 고객의 니즈를 파악하고, <br>
@@ -158,6 +154,13 @@
                   풀어나가며 다양하게 작동되는 모습을 보며 희열을 느꼈습니다.<br>
                   현재에 안주하지 않고 <span>성장하는 사람</span>이 되고싶습니다. 부족한 부분은 <br>
                   정확히 인지하고 채워나가겠습니다. 감사합니다.
+               </p>
+               <p class="txt_min">
+                  안녕하세요 한희현입니다. <br>
+                  다양한 환경에서 모든 사용자가 쉽게 접근하고 상호작용할 수 있는 웹사이트를 구현하는 것이 목표입니다. 고객의 니즈를 파악하고, 
+                  팀원은 물론 다양한 직군과 <span>원활한 소통</span>을 통해 프로젝트를 진행하겠습니다.
+                  Javascript를 공부할수록 많은 흥미를 느낍니다. 복잡한 코드를 풀어나가며 다양하게 작동되는 모습을 보며 희열을 느꼈습니다.
+                  현재에 안주하지 않고 <span>성장하는 사람</span>이 되고싶습니다. 부족한 부분은 정확히 인지하고 채워나가겠습니다. 감사합니다.
                </p>
             </div>
             <!-- // textbox_left -->
@@ -557,7 +560,7 @@
          <!-- // design_inner -->
          
          <!-- pagenation-->
-         <div class="pagenation">
+         <!-- <div class="pagenation">
             <a href="#prev" class="prev on">이전 프로젝트</a>
 
             <ul class="slide_roll">
@@ -566,7 +569,7 @@
             </ul>
 
             <a href="#next" class="next">다음 프로젝트</a>
-         </div>
+         </div> -->
          <!-- pagenation -->
       </section>
    </div>
@@ -581,7 +584,7 @@
                <a href="mailto:gksgmlgus@naver.com">Email</a>
             </li>
             <li><a href="#">OpenChat</a></li>
-            <li><a href="#">Phone</a></li>
+            <li><a href="./resume/한희현_이력서.pdf" download="한희현_이력서.pdf">Resume</a></li>
          </ul>
          <p>
             <span>본 페이지는 개인 포트폴리오용으로 제작되었습니다.</span>

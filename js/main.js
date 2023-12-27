@@ -8,9 +8,6 @@ $(window).resize(function(){document.location.reload();})
 //    $("html, body").animate({ scrollTop: 0 }, "slow"); 
 // });
 
-// a태그 점핑 방지
-$("a").click(function(e){e.preventDefault();});
-
 // cursor
 var cursor = document.querySelector('.cursor');
 var a = document.querySelectorAll('a');
@@ -255,3 +252,26 @@ tabMenu.forEach((tab, index) => {
 
 
 
+// tablet + mobile
+const minOpen = document.querySelector("#header .minBtn"); // 전체보기 햄버거 버튼
+const minClose = document.querySelector("div.minBtn_box > .minBtn_close"); // 전체보기 닫기 버튼
+const minBox = document.querySelector("div.minBtn_box"); // 메뉴 전체보기
+const minNav = document.querySelectorAll("div.minBtn_nav > ul > li"); // 메뉴 li
+
+minOpen.addEventListener("click", e => {
+   e.preventDefault();
+
+   minBox.classList.add("on");
+})
+
+minClose.addEventListener("click", e => {
+   e.preventDefault();
+
+   minBox.classList.remove("on");
+})
+
+minNav.forEach(item => {
+   item.addEventListener("click", e => {
+      minBox.classList.remove("on");
+   })
+})

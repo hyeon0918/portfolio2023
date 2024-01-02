@@ -260,32 +260,33 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 /* swiper */
 .swiper { width: 45%; height: 100%; display: flex; justify-content: center;}
 .swiper-slide { position: relative; width: 300px; height: 450px; overflow: hidden; }
-.swiper-slide img { display: block; margin: 0 auto; }
+.swiper-slide img { display: block; width: 100%; margin: 0 auto; }
 
 /* H: 780px 기준으로 측정 */
 /* 각각의 width 값 입력 */
-.slide_num1 > img { width: 26vw; } /* 476px */
-.slide_num2 > img { width: 24vw; } /* 438px */
-.slide_num3 > img { width: 20vw; } /* 361px */
-.slide_num4 > img { width: 16vw; } /* 293px */
-.slide_num5 > img { width: 18vw; } /* 312px */
-.slide_num6 > img { width: 24vw; } /* 416px */
-.slide_num7 > img { width: 30vw; } /* 546px */
-.slide_num8 > img { width: 34vw; } /* 698px */
-.slide_num9 > img { width: 32vw; } /* 546px*/
-.slide_num10 > img { width: 32vw; } /* 546px */
-.slide_num11 > img { width: 32vw; } /*  546px*/
+.slide_num1 > img { width: 22vw; }
+.slide_num2 > img { width: 24vw; }
+.slide_num3 > img { width: 16vw; }
+.slide_num4 > img { width: 13vw; }
+.slide_num5 > img { width: 16vw; }
+.slide_num6 > img { width: 20vw; }
+.slide_num7 > img { width: 26vw; }
+.slide_num8 > img { width: 28vw; }
+.slide_num9 > img { width: 24vw; }
+.slide_num10 > img { width: 24vw; }
+.slide_num11 > img { width: 24vw; }
 
 .swiper-slide span { display: inline-block; position: absolute; top: 0; left: 0; width: 20px;
    padding: 22px 24px 44px 24px; color:#fff; text-transform: uppercase; background: #e1e429; 
    border-radius: 0  0 30px 30px; letter-spacing: 2px; font-size: 1.6rem; font-family: GM_b; text-align: center; }
 
 /* 각각의 color 지정 */
-.swiper-slide span.pop { background: #db7617; }
-.swiper-slide span.banner { margin-left: 30px; background: #e4b50a; }
-.swiper-slide:nth-of-type(4) span.banner { margin-left: 70px; background: #e4b50a; }
-.swiper-slide span.detail { margin-left: 50px;background: #B9848C; }
-.swiper-slide:nth-of-type(6) span.banner { background: #e4b50a; }
+.swiper-slide span.pop { margin-left: 4px; background: #db7617; }
+.swiper-slide:nth-of-type(1) span.pop { margin-left: 30px; background: #db7617; }
+.swiper-slide span.banner { margin-left: 90px; background: #e4b50a; }
+.swiper-slide:nth-of-type(4) span.banner { margin-left: 120px; background: #e4b50a; }
+.swiper-slide span.detail { margin-left: 88px;background: #B9848C; }
+.swiper-slide:nth-of-type(6) span.detail { background: #B9848C; }
 .swiper-slide span.illust { background: #806491; }
 
 /* contact */

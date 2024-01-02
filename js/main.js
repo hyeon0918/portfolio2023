@@ -74,8 +74,6 @@ let activation = (wheel) => {
    };
 };
 
-
-
 // activation 함수 내에 반복되는 forEach문
 let activation2 = (index, list) => {
    list.forEach(item => {
@@ -111,7 +109,6 @@ for(let i = 0; i < contents.length; i++){
       };
    });
 };
-
 
 // header
 // header-1 name text in/out
@@ -191,7 +188,6 @@ workPrev.addEventListener("click", e => {
    pageRoll[workNum].classList.add("on");
 });
 
-
 // w3c 접근성 결과 페이지
 const veriBtn = document.querySelectorAll(".work_wrap div li.veri_btn");
 const verification = document.querySelectorAll(".verification > div");
@@ -250,7 +246,11 @@ tabMenu.forEach((tab, index) => {
    tabMenu[0].classList.add("on");
 });
 
-
+// design swiper
+var swiper = new Swiper(".mySwiper", {
+   effect: "cards",
+   // grabCursor: true,
+});
 
 // tablet + mobile
 const minOpen = document.querySelector("#header .minBtn"); // 전체보기 햄버거 버튼
@@ -262,16 +262,16 @@ minOpen.addEventListener("click", e => {
    e.preventDefault();
 
    minBox.classList.add("on");
-})
+});
 
 minClose.addEventListener("click", e => {
    e.preventDefault();
 
    minBox.classList.remove("on");
-})
+});
 
 minNav.forEach(item => {
    item.addEventListener("click", e => {
       minBox.classList.remove("on");
-   })
-})
+   });
+});

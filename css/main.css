@@ -48,12 +48,16 @@ html { font-size: 16px; scroll-behavior: smooth; }
    .header_inner { display: flex; justify-content: flex-start; padding: 0 11vh; }
 
 #container { width: 100%; height: 100%; }
-   section.profile { position: relative; width: 100%; height: 100vh; overflow: hidden; }
-   section.pub,section.design { position: relative; width: 100%; height: 100%; }
-      .pub_inner,.design_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 57.6vh; padding: 110px 90px; 
+   section.profile { position: relative; width: 100%; height: 100%; overflow: hidden; }
+   section.pub { position: relative; width: 100%; height: 100%; }
+      .pub_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 57.6vh; padding: 110px 90px; 
          background: rgba(38, 38, 38, 0.80); border-radius: 24px; }
-      .pub_frame,.design_frame { overflow: hidden; z-index: 10; position: relative; width: 100%; height: 100%; transition: left 0.6s ease-in-out; }
-      .work_wrap,.design_wrap { position: relative; display: flex; justify-content: flex-start; transition: left 0.6s ease-in-out; width: 300%; height: 100%; }
+      .pub_frame { overflow: hidden; z-index: 10; position: relative; width: 100%; height: 100%; transition: left 0.6s ease-in-out; }
+      .work_wrap { position: relative; display: flex; justify-content: flex-start; transition: left 0.6s ease-in-out; width: 300%; height: 100%; }
+
+   section.design { position: relative; width: 100%; height: 100%; }
+      .design_inner { position: absolute; left: 50%; top: 15%; transform: translateX(-50%); width: 68.2vw; height: 65.98vh; padding: 60px 90px; 
+         background: rgba(38, 38, 38, 0.80); border-radius: 24px; display: flex; gap: 20px; }
 
 #contact { position: relative; }
    section.contact { width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: column; }
@@ -160,7 +164,6 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 
 
 /* content3_publishing */
-/* content4_design */
 .work_wrap div { flex: 1; display: flex; justify-content: flex-start; }
 
 .work_wrap .work_textbox { display: flex; flex-direction: column; gap: 20px; padding: 0 5px; }
@@ -206,7 +209,7 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .work_wrap > div:nth-of-type(2) > .mockup { background: url(../images/mockup_portfolio.png) no-repeat 0 50%; background-size: contain; }
 .work_wrap > div:nth-of-type(3) > .mockup { background: url(../images/mockup_cjone.png) no-repeat 0 50%; background-size: contain; }
 
-/* pub,design arrow */
+/* pub arrow */
 .pagenation { position: absolute; z-index: 20; left: 50%; transform: translateX(-50%); bottom: 12%; display: flex; gap: 30px; }
 
 .pagenation > a { width: 25px; height: 20px; background: url(../images/icon_arrow.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; }
@@ -238,7 +241,6 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .verification > div:nth-of-type(3) .tab_menu > li.on { background: #882579; }
 .verification > div:nth-of-type(3) .tab_menu > li.on > a { color: #ddd; }
 
-
 /* veri_wrap */
 .veri_wrap { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; 
    width: 72vw; height: 60vh; margin: 0 auto; padding: 20px 0; }
@@ -247,6 +249,44 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .veri_result > li { width: 100%; display: none; }
 .veri_result > li.on { display: block; }
 .veri_result img { display: block; }
+
+
+/* content4_design */
+/* design_content */
+.design_content { position: relative; width: 34%; }
+.design_content > h3 { width: 100%; text-align: center; color: #a0a0a0; font-size: 5.4rem; font-family: 'GM_b'; 
+   padding-top: 300px; }
+
+/* swiper */
+.swiper { width: 45%; height: 100%; display: flex; justify-content: center;}
+.swiper-slide { position: relative; width: 300px; height: 450px; overflow: hidden; }
+.swiper-slide img { display: block; margin: 0 auto; }
+
+/* H: 780px 기준으로 측정 */
+/* 각각의 width 값 입력 */
+.slide_num1 > img { width: 26vw; } /* 476px */
+.slide_num2 > img { width: 24vw; } /* 438px */
+.slide_num3 > img { width: 20vw; } /* 361px */
+.slide_num4 > img { width: 16vw; } /* 293px */
+.slide_num5 > img { width: 18vw; } /* 312px */
+.slide_num6 > img { width: 24vw; } /* 416px */
+.slide_num7 > img { width: 30vw; } /* 546px */
+.slide_num8 > img { width: 34vw; } /* 698px */
+.slide_num9 > img { width: 32vw; } /* 546px*/
+.slide_num10 > img { width: 32vw; } /* 546px */
+.slide_num11 > img { width: 32vw; } /*  546px*/
+
+.swiper-slide span { display: inline-block; position: absolute; top: 0; left: 0; width: 20px;
+   padding: 22px 24px 44px 24px; color:#fff; text-transform: uppercase; background: #e1e429; 
+   border-radius: 0  0 30px 30px; letter-spacing: 2px; font-size: 1.6rem; font-family: GM_b; text-align: center; }
+
+/* 각각의 color 지정 */
+.swiper-slide span.pop { background: #db7617; }
+.swiper-slide span.banner { margin-left: 30px; background: #e4b50a; }
+.swiper-slide:nth-of-type(4) span.banner { margin-left: 70px; background: #e4b50a; }
+.swiper-slide span.detail { margin-left: 50px;background: #B9848C; }
+.swiper-slide:nth-of-type(6) span.banner { background: #e4b50a; }
+.swiper-slide span.illust { background: #806491; }
 
 /* contact */
 .contact h2 { width: 100%; text-align: center; padding-top: 38vh; font-family: 'GM_b'; font-size: 6.25rem; }

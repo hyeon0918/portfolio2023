@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="./css/tablet.css">
 <link rel="stylesheet" href="./css/mobile.css">
 
+<!-- css design-swiper -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+<link rel="stylesheet" href="./css/swiper.css">
+
 <!-- script -->
 <script src="./js/jquery-3.7.1.min.js"></script>
 <script defer src="./js/main.js"></script>
@@ -496,81 +500,67 @@
 
          <!-- design_inner -->
          <div class="design_inner">
-            <!-- design_frame -->
-            <div class="design_frame">
-               <!-- work_wrap -->
-               <div class="work_wrap">
-
-                  <!-- 풀무원 -->
-                  <div id="design1">
-                     <div class="work_textbox">
-                        <h3 class="work_type">01. Publishing</h3>
-                        <div class="work_hashi">
-                           <span>#RESPONSIVE</span>
-                        </div>
-
-                        <h4 class="work_title">풀무원</h4>
-                        <p>
-                           기존 사이트에서 부족했던 웹 접근성에 중점을 두고 반응형으로<br>
-                           풀무원 사이트를 제작하였습니다. 미디어 쿼리를 이용하여<br>
-                           PC, 태블릿과 모바일에서 레이아웃이 변경됩니다.
-                        </p>
-
-                        <ul>
-                           <li>웹접근성 준수 및 W3C 유효성 검사 통과</li>
-                           <li>Vanila JS를 사용한 다양한 인터렉션 구현</li>
-                           <li>Index, 투자정보, 고객센터 총 3페이지 제작</li>
-                        </ul>
-
-                        <div class="work_info">
-                           <dl>
-                              <dt>개인 프로젝트</dt>
-                              <dd>2023.05 ~ 06</dd>
-                           </dl>
-                           <dl>
-                              <dt>사용툴</dt>
-                              <dd>
-                                 <ul>
-                                    <li>HTML 아이콘 이미지</li>
-                                    <li>CSS 아이콘 이미지</li>
-                                    <li>PSD 아이콘 이미지</li>
-                                    <li>AI 아이콘 이미지</li>
-                                    <li>JS 아이콘 이미지</li> 
-                                 </ul>
-                              </dd>
-                           </dl>
-                        </div>
-
-                        <ul>
-                           <li><a href="https://hyeon0918.github.io/pulmuone_2023/" target="_blank">VIEW WEBSITE</a></li>
-                           <li class="veri_btn"><a href="#pulmuoneverification">W3C MARKUP VERIFICATION</a></li>
-                        </ul>
-                     </div>
-
-                     <div class="mockup">목업 이미지</div>
-                  </div>
-                  <!-- // 풀무원 -->
-
-
-               </div>
-               <!-- // work_wrap -->
+            <!-- design_content -->
+            <div class="design_content">
+               <h3>Design</h3>
             </div>
-            <!-- // design_frame -->
+            <!-- // design_content -->
+
+            <!-- swiper -->
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide slide_num1">
+                     <span class="pop">팝업디자인</span>
+                     <img src="./images/slide_pop_1.jpg" alt="달빛유자수면팩">
+                  </div>
+                  <div class="swiper-slide slide_num2">
+                     <span class="pop">팝업디자인</span>
+                     <img src="./images/slide_pop_2.jpg" alt="분식꽃">
+                  </div>
+                  <div class="swiper-slide slide_num3">
+                     <span class="banner">배너디자인</span>
+                     <img src="./images/slide_banner_1.jpg" alt="도미노">
+                  </div>
+                  <div class="swiper-slide slide_num4">
+                     <span class="banner">배너디자인</span>
+                     <img src="./images/slide_banner_2.jpg" alt="cgv">
+                  </div>
+                  <div class="swiper-slide slide_num5">
+                     <span class="detail">상세페이지</span>
+                     <img src="./images/slide_detail_1.jpg" alt="토리든">
+                  </div>
+                  <div class="swiper-slide slide_num6">
+                     <span class="detail">상세페이지</span>
+                     <img src="./images/slide_detail_2.jpg" alt="피카소">
+                  </div>
+                  <div class="swiper-slide slide_num7">
+                     <span class="illust">일러스트</span>
+                     <img src="./images/slide_illust_1.jpg" alt="캐릭터1">
+                  </div>
+                  <div class="swiper-slide slide_num8">
+                     <span class="illust">일러스트</span>
+                     <img src="./images/slide_illust_2.jpg" alt="캐릭터2">
+                  </div>
+                  <div class="swiper-slide slide_num9">
+                     <span class="illust">일러스트</span>
+                     <img src="./images/slide_illust_3.jpg" alt="야채1">
+                  </div>
+                  <div class="swiper-slide slide_num10">
+                     <span class="illust">일러스트</span>
+                     <img src="./images/slide_illust_4.jpg" alt="야채2">
+                  </div>
+                  <div class="swiper-slide slide_num11">
+                     <span class="illust">일러스트</span>
+                     <img src="./images/slide_illust_5.jpg" alt="건물">
+                  </div>
+            
+               </div>
+            </div>
+            <!-- // swiper -->
+
          </div>
          <!-- // design_inner -->
          
-         <!-- pagenation-->
-         <!-- <div class="pagenation">
-            <a href="#prev" class="prev on">이전 프로젝트</a>
-
-            <ul class="slide_roll">
-               <li class="on">work1로 이동</li>
-               <li>work2로 이동</li>
-            </ul>
-
-            <a href="#next" class="next">다음 프로젝트</a>
-         </div> -->
-         <!-- pagenation -->
       </section>
    </div>
    <!-- // content4_design -->
@@ -600,5 +590,7 @@
 </main>
 <!-- // container -->
 
+<!-- design-swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

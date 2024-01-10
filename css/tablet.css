@@ -193,7 +193,7 @@ nav.gnb { display: none; }
 
 /* 브랜드 color */
 .work_wrap > div:nth-of-type(1) .work_hashi > span { background: #8dc63f; }
-.work_wrap > div:nth-of-type(3) .work_hashi > span { background: #882579; color: #ddd; }
+.work_wrap > div:nth-of-type(2) .work_hashi > span { background: #882579; color: #ddd; }
 
 .work_textbox > h4 { margin-top: 26vh; font-size: 1.875rem; font-family: 'GM_b'; }
 .work_textbox > p { font-family: 'GM_m'; line-height: 26px; }
@@ -218,8 +218,8 @@ nav.gnb { display: none; }
 
 /* 브랜드 color */
 .work_wrap > div:nth-of-type(1) ul:nth-of-type(2) > li:hover { background: #8dc63f; border: 1px solid #8dc63f; }
-.work_wrap > div:nth-of-type(3) ul:nth-of-type(2) > li:hover { background: #882579; border: 1px solid #882579; }
-.work_wrap > div:nth-of-type(3) ul:nth-of-type(2) > li:hover a { color: #ddd; }
+.work_wrap > div:nth-of-type(2) ul:nth-of-type(2) > li:hover { background: #882579; border: 1px solid #882579; }
+.work_wrap > div:nth-of-type(2) ul:nth-of-type(2) > li:hover a { color: #ddd; }
 
 /* work_wrap > mockup */
 .work_wrap > div > .mockup { position: absolute; top: 8vh; left: 21vw;
@@ -227,8 +227,8 @@ nav.gnb { display: none; }
 
 /* 각각의 목업 이미지 삽입  + 위치 */
 .work_wrap > div:nth-of-type(1) > .mockup { background: url(../images/mockup_min_pulmuone.png) no-repeat 0 50%; background-size: contain; }
-.work_wrap > div:nth-of-type(2) > .mockup { background: url(../images/mockup_min_portfolio.png) no-repeat 0 50%; background-size: contain; }
-.work_wrap > div:nth-of-type(3) > .mockup { background: url(../images/mockup_min_cjone.png) no-repeat 0 50%; background-size: contain; }
+.work_wrap > div:nth-of-type(2) > .mockup { background: url(../images/mockup_min_cjone.png) no-repeat 0 50%; background-size: contain; }
+.work_wrap > div:nth-of-type(3) > .mockup { background: url(../images/mockup_min_portfolio.png) no-repeat 0 50%; background-size: contain; }
 
 /* pub arrow */
 .pagenation { position: absolute; z-index: 20; left: 50%; transform: translateX(-50%); bottom: 6%; display: flex; gap: 30px; }

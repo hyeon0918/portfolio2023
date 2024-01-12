@@ -156,10 +156,9 @@ nav.gnb { display: none; }
 .info_hashi > li { padding: 4px 8px; gap: 4px; border-radius: 64px; background: #e1e429; color: #383838;
    font-size: 0.8rem; font-family: 'GM_b'; }
 
-.textbox_left > p.txt_pc { display: none; }
-.textbox_left > p.txt_min { width: 100%; padding: 20px 0 20px; line-height: 160%; font-family: 'GM_m'; font-size: 0.88rem;
+.textbox_left > p.info_txt { width: 100%; padding: 20px 0 20px; line-height: 160%; font-family: 'GM_m'; font-size: 0.88rem;
    color: #a0a0a0; text-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5); }
-.textbox_left > p.txt_min > span { color: #e1e429; }
+.textbox_left > p.info_txt > span { color: #e1e429; }
    
 /* textbox_right */
 .textbox_right { width: 100%; }

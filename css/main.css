@@ -88,11 +88,9 @@ html { font-size: 16px; scroll-behavior: smooth; }
 /* 주메뉴 */
 nav.gnb { width: 50vh; float: left; margin-left: auto; }
 nav.gnb > ul { display: flex; justify-content: space-between; line-height: 5vh; gap: 6px; }
-nav.gnb > ul > li { color: #fff; text-align: center; }
+nav.gnb > ul > li { color: #fff; text-align: center; font-family: GM_b; font-size: 0.8vw; }
 
-
-nav.gnb > ul > li.on { font-family: GM_B; }
-nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
+nav.gnb > ul > li.on > a {  color: #e1e429; }
 
 /* // header */
 
@@ -123,22 +121,22 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 /* textbox_left */
 .textbox_left { position: relative; width: 41vw; display: flex; flex-direction: column; gap: 12px; }
 
-.box_01 { width: 100%; display: flex; justify-content: center; align-items: center; gap: 43px; }
+.box_01 { width: 100%; display: flex; justify-content: center; align-items: center; gap: 38px; }
 .profile_img { width: 218px; flex-shrink: 0; }
 
 /* info */
 .info { width: 100%; }
-.info > p { font-size: 1.75rem; font-family: 'GM_b'; }
+.info > p { font-size: 1.76vw; font-family: 'GM_b'; }
 .info > p > span { color: #e1e429; }
 
-.info_hashi { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 24px; }
+.info_hashi { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 14px; }
 .info_hashi > li { padding: 6px 8px; gap: 8px; border-radius: 64px; background: #e1e429; color: #383838;
-   font-size: 0.94rem; font-family: 'GM_b'; }
+   font-size: 0.94rem; font-family: 'GM_b'; font-size: 0.8vw; }
 
-.textbox_left > p.txt_pc { width: 100%; padding: 36px 0 36px; line-height: 160%; font-family: 'GM_m'; font-size: 1.5rem;
+.textbox_left > p.info_txt { width: 100%; padding: 36px 0 36px; line-height: 160%; font-family: 'GM_m'; font-size: 1.28vw;
    color: #a0a0a0; text-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5); }
-.textbox_left > p.txt_pc > span { color: #e1e429; }
-.textbox_left > p.txt_min { display: none; }
+.textbox_left > p.info_txt> span { color: #e1e429; }
+
 /* textbox_right */
 .textbox_right { display: flex; flex-direction: column; }
 .textbox_right > .skills { display: flex; flex-direction: column; gap: 80px; margin-top: 60px; }
@@ -149,7 +147,7 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .skills > li > dl > dt > ul.skills_title > li:nth-of-type(1) { text-indent: -9999px; overflow: hidden; width: 39px; height: 38px;
    background: url(../images/icon_check2.png) no-repeat 0 0; }
 .skills > li > dl > dt > ul.skills_title > li:nth-of-type(2) { height: 40px; line-height: 43px; color: #e1e429;  font-family: 'GM_b'; font-size: 1.5rem; }
-.skills > li > dl > dd { color: #fff; font-family: 'GM_m'; font-size: 1.25rem; }
+.skills > li > dl > dd { color: #fff; font-family: 'GM_m'; font-size: 1.12vw; }
 
 .skills_S > dd { text-indent: -9999px; overflow: hidden; margin-top: 20px; }
 .skills_S > dd > ul { display: flex; align-items: flex-start; gap: 22px }
@@ -167,15 +165,16 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .work_wrap div { flex: 1; display: flex; justify-content: flex-start; }
 
 .work_wrap .work_textbox { display: flex; flex-direction: column; gap: 20px; padding: 0 5px; }
-.work_textbox > h3 { color: #a0a0a0; font-size: 3.5rem; font-family: 'GM_b'; }
-.work_textbox > .work_hashi > span { display: inline-flex; justify-content: center; align-items: center; padding: 10px 38px; height: 40px;
-   color: #333; font-family: 'GM_b'; border-radius: 1074px; background: #e1e429; }
+.work_textbox > h3 { color: #a0a0a0; font-size: 2.8vw; font-family: 'GM_b'; }
+.work_textbox > .work_hashi { width: 100%; height:  }
+.work_textbox > .work_hashi > span { display: inline-flex; justify-content: center; align-items: center; padding: 0.6vw 2vw; 
+   color: #333; font-family: 'GM_b'; border-radius: 1074px; background: #e1e429; font-size: 0.8vw; }
 
 /* 브랜드 color */
 .work_wrap > div:nth-of-type(1) .work_hashi > span { background: #8dc63f; }
 .work_wrap > div:nth-of-type(2) .work_hashi > span { background: #882579; color: #ddd; }
 
-.work_textbox > h4 { margin-top: 3.2vh; font-size: 2.3rem; font-family: 'GM_b'; }
+.work_textbox > h4 { margin-top: 3vh; font-size: 2.3rem; font-family: 'GM_b'; }
 .work_textbox > p { font-family: 'GM_m'; font-size: 1.1rem; line-height: 26px; }
 .work_textbox > ul:nth-of-type(1) { padding-left: 0.6vw; list-style: disc; list-style-position: inside; line-height: 30px; color: #a0a0a0; font-size: 1.1rem; }
 
@@ -192,7 +191,7 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .work_info > dl > dd > ul > li:nth-of-type(5) { background-position-x: -100px; }
 
 .work_textbox > ul:nth-of-type(2) { margin-top: 2vh; display: flex; justify-content: flex-start; gap: 14px; }
-.work_textbox > ul:nth-of-type(2) > li { padding: 16px 30px; border: 1px solid #fff; border-radius: 8px; }
+.work_textbox > ul:nth-of-type(2) > li { padding: 0.8vw 2.4vw; border: 1px solid #fff; border-radius: 8px; }
 .work_textbox > ul:nth-of-type(2) > li:hover { background: #e1e429; border: 1px solid #e1e429; }
 .work_textbox > ul:nth-of-type(2) > li:hover > a { color: #333; }
 
@@ -261,6 +260,7 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .swiper { width: 45%; height: 100%; display: flex; justify-content: center;}
 .swiper-slide { position: relative; width: 300px; height: 450px; overflow: hidden; }
 .swiper-slide img { display: block; width: 100%; margin: 0 auto; }
+.swiper-slide-shadow { opacity: 0; }
 
 /* H: 780px 기준으로 측정 */
 /* 각각의 width 값 입력 */
@@ -289,7 +289,8 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .swiper-slide:nth-of-type(6) span.detail { background: #B9848C; }
 .swiper-slide span.illust { background: #806491; }
 
-/* contact */
+
+/* content5 - contact */
 .contact h2 { width: 100%; text-align: center; padding-top: 38vh; font-family: 'GM_b'; font-size: 6.25rem; }
 .contact ul { display: flex; justify-content: center; gap: 260px; width: 100%; height: 3vh; line-height: 3vh; margin-top: 30vh; }
 .contact ul > li { position: relative; width: 10vw; text-align: center; font-size: 1.2rem; }
@@ -299,7 +300,6 @@ nav.gnb > ul > li.on > a { font-size: 1.1rem; color: #e1e429; }
 .contact ul > li a:hover { color: #e1e429; font-weight: bold; font-size: 1.4rem; transition: .3s ease-out; }
 
 /* 각각의 hover */
-
 /* email + phone */
 .contact ul > li a::before { display: block; clear: both; content: ""; position: absolute; left: 30px; top: 2px; width: 24px; height: 24px; 
    background: url(../images/icon_contact.png) no-repeat 0 0; }

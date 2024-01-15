@@ -166,7 +166,6 @@ nav.gnb > ul > li.on > a {  color: #e1e429; }
 
 .work_wrap .work_textbox { display: flex; flex-direction: column; gap: 20px; padding: 0 5px; }
 .work_textbox > h3 { color: #a0a0a0; font-size: 2.8vw; font-family: 'GM_b'; }
-.work_textbox > .work_hashi { width: 100%; height:  }
 .work_textbox > .work_hashi > span { display: inline-flex; justify-content: center; align-items: center; padding: 0.6vw 2vw; 
    color: #333; font-family: 'GM_b'; border-radius: 1074px; background: #e1e429; font-size: 0.8vw; }
 

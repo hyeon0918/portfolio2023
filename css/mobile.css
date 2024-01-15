@@ -290,6 +290,15 @@ nav.gnb { display: none; }
 .slide_num4 > img { width: 40vw; margin: 0 auto; }
 .slide_num5 > img { width: 40vw; margin: 0 auto; }
 .slide_num6 > img { width: 40vw; margin: 0 auto; }
+.slide_num7 > img { width: 40vw; margin: 0 auto; }
+
+/* 상세페이지 자세히보기 버튼 */
+.swiper-slide > .detail_btn { display: none;
+   position: absolute; left: 50%; top: 50%; transform: translate(-50%);
+   font-size: 14px; padding: 2vw 6vw; border-radius: 8px; background: rgba(0, 0, 0, 0.5); }
+.swiper-slide:nth-of-type(7)  > .detail_btn { top: 30%; }
+.slide_detail:hover > .detail_btn { display: block; }
+.detail_btn:hover { background: #333; }
 
 .swiper-slide span { display: inline-block; position: absolute; top: 0; left: 0; width: 20px;
    padding: 16px 10px 28px 10px; color:#fff; text-transform: uppercase; background: #e1e429; 

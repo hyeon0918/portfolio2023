@@ -269,16 +269,32 @@ nav.gnb > ul > li.on > a {  color: #e1e429; }
 .slide_num3 > img { width: 16vw; }
 .slide_num4 > img { width: 13vw; }
 .slide_num5 > img { width: 16vw; }
-.slide_num6 > img { width: 20vw; }
-.slide_num7 > img { width: 26vw; }
-.slide_num8 > img { width: 28vw; }
-.slide_num9 > img { width: 24vw; }
+.slide_num6 > img { width: 16vw; }
+.slide_num7 > img { width: 18vw; }
+.slide_num8 > img { width: 26vw; }
+.slide_num9 > img { width: 28vw; }
 .slide_num10 > img { width: 24vw; }
 .slide_num11 > img { width: 24vw; }
+.slide_num12 > img { width: 24vw; }
+
+/* 상세페이지 자세히보기 버튼 */
+.swiper-slide > .detail_btn { display: none;
+   position: absolute; left: 50%; top: 50%; transform: translate(-50%);
+   font-size: 18px; padding: 1.2vw 4vw; border-radius: 8px; background: rgba(0, 0, 0, 0.5);}
+.slide_detail:hover > .detail_btn { display: block; }
+.detail_btn:hover { background: #333; }
 
 .swiper-slide span { display: inline-block; position: absolute; top: 0; left: 0; width: 20px;
    padding: 22px 24px 44px 24px; color:#fff; text-transform: uppercase; background: #e1e429; 
    border-radius: 0  0 30px 30px; letter-spacing: 2px; font-size: 1.6rem; font-family: GM_b; text-align: center; }
+
+/* popup */
+.popBg { 
+   z-index: 100; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+   background:rgba(0, 0, 0, 0.8); }
+.popcon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+   width: 600px; height: 500px; }
+
 
 /* 각각의 color 지정 */
 .swiper-slide span.pop { margin-left: 4px; background: #db7617; }

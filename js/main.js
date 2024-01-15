@@ -1,7 +1,7 @@
 // main.js
 
 // 사이즈 변경 시 새로고침
-$(window).resize(function(){document.location.reload();})
+$(window).resize(function(){document.location.reload();});
 
 // 새로고침 시 맨 위로
 // $(function(){
@@ -275,3 +275,5 @@ minNav.forEach(item => {
       minBox.classList.remove("on");
    });
 });
+
+// design - 상세페이지

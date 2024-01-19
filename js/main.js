@@ -93,7 +93,6 @@ for(let i = 0; i < gnbLis.length; i++) {
 };
 
 // content에서 마우스 휠을 움직였을 때, 방향에 따라 content 이동
-
 for(let i = 0; i < contents.length; i++){
    contents[i].addEventListener("wheel", e => {
 
@@ -277,3 +276,35 @@ minNav.forEach(item => {
 });
 
 // design - 상세페이지
+const detailBtn = document.querySelectorAll(".swiper .detail_btn"); // 자세히보기 버튼
+const detailPop = document.querySelectorAll(".popup_detail > div"); // popup 상세페이지
+const CloseBtn = document.querySelectorAll(".popup_close"); // 닫기 버튼
+
+detailBtn.forEach(item => {
+   item.addEventListener("click", e => {
+      e.preventDefault();
+
+      // a 태그에 연결한 링크 값과 동일한 ID 값을 가진 상세페이지 호출
+      const targetPopId = e.currentTarget.getAttribute("href");
+      const targetDetail = document.querySelector(`.popup_detail > div[id="${targetPopId}"]`);
+
+      // 위에서 호출한 동일한 값을 가진 아이에게 클래스 on 추가
+      if(targetDetail) {
+         targetDetail.classList.add("on"); 
+      };
+   });
+});
+
+
+
+CloseBtn.forEach(item => {
+   item.addEventListener("click", e => {
+      e.preventDefault();
+
+      const currentPop = document.querySelector(".popup_content.on");
+
+      if(currentPop){
+         currentPop.classList.remove("on");
+      };
+   });
+});

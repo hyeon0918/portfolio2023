@@ -287,14 +287,6 @@ nav.gnb > ul > li.on > a {  color: #e1e429; }
    padding: 22px 24px 44px 24px; color:#fff; text-transform: uppercase; background: #e1e429; 
    border-radius: 0  0 30px 30px; letter-spacing: 2px; font-size: 1.6rem; font-family: GM_b; text-align: center; }
 
-/* popup */
-.popBg { 
-   z-index: 100; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
-   background:rgba(0, 0, 0, 0.8); }
-.popcon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-   width: 600px; height: 500px; }
-
-
 /* 각각의 color 지정 */
 .swiper-slide span.pop { margin-left: 4px; background: #db7617; }
 .swiper-slide:nth-of-type(1) span.pop { margin-left: 30px; background: #db7617; }
@@ -303,6 +295,17 @@ nav.gnb > ul > li.on > a {  color: #e1e429; }
 .swiper-slide span.detail { margin-left: 88px;background: #B9848C; }
 .swiper-slide:nth-of-type(6) span.detail { background: #B9848C; }
 .swiper-slide span.illust { background: #806491; }
+
+/* popup_detail */
+.popup_detail > .popup_content { display: none; z-index: 400; position: fixed; left: 0; top: 0; width: 100%; height: 100%; 
+   background-color: rgba(0,0,0,0.9); overflow: hidden; }
+.popup_detail > .popup_content.on { display: block; }
+
+.detail_wrap { position: fixed; left: 50%; transform: translateX(-50%); width: 90%; top: 20%; height: 80%; 
+   display: flex; justify-content: center; gap: 20px; } 
+.img_container { max-width: 900px; height: 600px; overflow-y: scroll; }
+
+.popup_content > .popup_close { float: left; height: 40px; }
 
 
 /* content5 - contact */
